@@ -12,6 +12,9 @@ class App extends Component {
   render() {
     return (
       <Fragment>
+        {
+          window.location.pathname == "/"
+        }
         <Header />
         <main>
           {this.props.children}
