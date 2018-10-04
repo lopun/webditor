@@ -24,7 +24,7 @@ class Home extends Component {
   handleSubmit() {
     console.log(this.state.script);
     console.log(this.state.option);
-    fetch("http://localhost:8080/api/compile/script", {
+    fetch("http://ssal.sparcs.org:16200/api/compile/script", {
       method: "POST",
       body: JSON.stringify({
         script: `${this.state.script}`,
